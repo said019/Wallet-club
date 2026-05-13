@@ -988,10 +988,21 @@
         }
 
         .business-card {
-            padding: 26px;
+            overflow: hidden;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 30px;
             background: rgba(244, 249, 250, 0.72);
+        }
+
+        .business-card img {
+            width: 100%;
+            height: 178px;
+            object-fit: cover;
+            filter: saturate(0.92) contrast(1.03);
+        }
+
+        .business-card div {
+            padding: 24px;
         }
 
         .business-card h3 {
@@ -1026,6 +1037,45 @@
             margin-top: 22px;
             color: var(--muted);
             line-height: 1.78;
+        }
+
+        .trust-photo {
+            position: relative;
+            min-height: 260px;
+            margin-top: 28px;
+            overflow: hidden;
+            border-radius: 30px;
+            background: var(--surface-strong);
+        }
+
+        .trust-photo img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: saturate(0.86) contrast(1.04);
+        }
+
+        .trust-photo::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 38%, rgba(6, 23, 37, 0.72));
+            pointer-events: none;
+        }
+
+        .trust-photo span {
+            position: absolute;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            z-index: 1;
+            color: oklch(98% 0.008 80);
+            font-size: 0.78rem;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .trust-list {
@@ -1339,9 +1389,14 @@
             }
 
             .photo-card,
-            .photo-tile {
+            .photo-tile,
+            .trust-photo {
                 min-height: 290px;
                 border-radius: 26px;
+            }
+
+            .business-card img {
+                height: 190px;
             }
 
             .visual-stage {
@@ -1731,16 +1786,29 @@
                 </div>
                 <div class="other-businesses">
                     <article class="business-card">
-                        <h3>Barberías y belleza</h3>
-                        <p>Reservas, historial de clientes, recordatorios y programas para que vuelvan.</p>
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80"
+                            alt="Barbería moderna con servicio de corte" loading="lazy" decoding="async">
+                        <div>
+                            <h3>Barberías y belleza</h3>
+                            <p>Reservas, historial de clientes, recordatorios y programas para que vuelvan.</p>
+                        </div>
                     </article>
                     <article class="business-card">
-                        <h3>Comida y pedidos</h3>
-                        <p>Pedidos web, pagos, recompensas y comunicación para clientes recurrentes.</p>
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+                            alt="Restaurante con mesas listas para recibir pedidos" loading="lazy" decoding="async">
+                        <div>
+                            <h3>Comida y pedidos</h3>
+                            <p>Pedidos web, pagos, recompensas y comunicación para clientes recurrentes.</p>
+                        </div>
                     </article>
                     <article class="business-card">
-                        <h3>Servicios con cita</h3>
-                        <p>Agenda, pagos, confirmaciones y seguimiento para clínicas o negocios locales.</p>
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80"
+                            alt="Espacio de atención profesional para servicios con cita" loading="lazy"
+                            decoding="async">
+                        <div>
+                            <h3>Servicios con cita</h3>
+                            <p>Agenda, pagos, confirmaciones y seguimiento para clínicas o negocios locales.</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -1752,6 +1820,12 @@
                     <div class="section-label">Lo que le faltaba</div>
                     <h2>Primero estrategia. Después código.</h2>
                     <p>Diseñamos el flujo antes de construirlo, para que el sistema se sienta propio y no genérico.</p>
+                    <figure class="trust-photo">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+                            alt="Equipo revisando una estrategia digital en mesa de trabajo" loading="lazy"
+                            decoding="async">
+                        <span>Diseño de flujo antes de construir</span>
+                    </figure>
                 </div>
                 <div class="trust-list">
                     <div class="trust-item">
