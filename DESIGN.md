@@ -2,32 +2,32 @@
 
 ## Style Summary
 
-AgendaFull should feel like a premium digital systems studio for boutique fitness and wellness brands. The visual direction is warm, editorial, calm, and crafted, closer to a thoughtful creative studio than a purple SaaS dashboard.
+AgendaFull should feel like a premium technology studio for boutique fitness and wellness brands. The visual direction is precise, calm, digital, and operational, closer to a polished product system than an editorial wellness page.
 
 ## Color
 
-Use OKLCH tokens. Avoid the old green/cream loyalty palette and avoid purple as the dominant identity. The current direction uses blush, burgundy, wine, soft clay, and restrained green only as a small signal.
+Use OKLCH tokens. Avoid the old green/cream loyalty palette, purple as the dominant identity, and overly warm blush/burgundy styling. The current direction uses cool mist neutrals, deep ink blue, teal/cyan, signal green, and small amber highlights.
 
 ```css
 :root {
-    --base: oklch(94% 0.034 31);
-    --surface: oklch(98% 0.018 35);
-    --ink: oklch(27% 0.064 27);
-    --muted: oklch(43% 0.048 28);
-    --line: oklch(82% 0.032 30);
-    --plum: oklch(34% 0.082 27);
-    --clay: oklch(58% 0.095 38);
-    --mint: oklch(78% 0.047 144);
-    --soft-plum: oklch(89% 0.042 18);
-    --shadow: 0 24px 80px rgba(35, 24, 39, 0.12);
+    --base: oklch(96% 0.012 220);
+    --surface: oklch(98% 0.009 220);
+    --ink: oklch(18% 0.035 245);
+    --muted: oklch(43% 0.028 245);
+    --line: oklch(83% 0.019 225);
+    --plum: oklch(45% 0.095 210);
+    --clay: oklch(67% 0.12 82);
+    --mint: oklch(79% 0.13 165);
+    --soft-plum: oklch(91% 0.03 215);
+    --shadow: 0 24px 80px rgba(20, 38, 62, 0.14);
 }
 ```
 
-Color strategy: blush editorial base with committed burgundy/wine moments and small mint digital signals.
+Color strategy: cool technical base with committed teal/cyan moments, deep ink sections, signal green states, and tiny amber highlights.
 
 ## Typography
 
-Use a high-contrast editorial serif for major headings and a clean sans for body/interface text. The page should not feel like the previous DM Sans SaaS template or a purple dashboard.
+Use a clean technology sans for headings and body text, with strong weight contrast and short copy. The page should feel more product-system than editorial.
 
 Use large hero type, compact labels sparingly, and body copy capped to comfortable reading lengths.
 

@@ -10,23 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Manrope:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
         :root {
-            --base: oklch(94% 0.034 31);
-            --surface: oklch(98% 0.018 35);
-            --surface-strong: oklch(91% 0.043 29);
-            --ink: oklch(27% 0.064 27);
-            --muted: oklch(43% 0.048 28);
-            --line: oklch(82% 0.032 30);
-            --plum: oklch(34% 0.082 27);
-            --plum-deep: oklch(24% 0.07 25);
-            --clay: oklch(58% 0.095 38);
-            --mint: oklch(78% 0.047 144);
-            --soft-plum: oklch(89% 0.042 18);
-            --soft-clay: oklch(88% 0.052 41);
-            --shadow: 0 24px 80px rgba(79, 31, 27, 0.16);
+            --base: oklch(96% 0.012 220);
+            --surface: oklch(98% 0.009 220);
+            --surface-strong: oklch(92% 0.018 220);
+            --ink: oklch(18% 0.035 245);
+            --muted: oklch(43% 0.028 245);
+            --line: oklch(83% 0.019 225);
+            --plum: oklch(45% 0.095 210);
+            --plum-deep: oklch(23% 0.055 235);
+            --clay: oklch(67% 0.12 82);
+            --mint: oklch(79% 0.13 165);
+            --soft-plum: oklch(91% 0.03 215);
+            --soft-clay: oklch(92% 0.04 92);
+            --shadow: 0 24px 80px rgba(20, 38, 62, 0.14);
             --ease: cubic-bezier(0.32, 0.72, 0, 1);
         }
 
@@ -43,9 +43,9 @@
         body {
             min-height: 100vh;
             background:
-                linear-gradient(180deg, oklch(94% 0.034 31), oklch(91% 0.045 24) 44%, oklch(95% 0.028 35));
+                linear-gradient(180deg, oklch(96% 0.012 220), oklch(92% 0.022 210) 48%, oklch(97% 0.01 225));
             color: var(--ink);
-            font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: "Geist", "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -58,8 +58,8 @@
             z-index: -1;
             opacity: 0.42;
             background-image:
-                linear-gradient(rgba(112, 45, 39, 0.045) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(112, 45, 39, 0.035) 1px, transparent 1px);
+                linear-gradient(rgba(22, 72, 102, 0.055) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(22, 72, 102, 0.04) 1px, transparent 1px);
             background-size: 52px 52px;
             mask-image: linear-gradient(180deg, black 0%, transparent 76%);
         }
@@ -93,10 +93,10 @@
             width: min(1180px, calc(100% - 40px));
             margin: 0 auto;
             padding: 10px 12px 10px 14px;
-            border: 1px solid rgba(53, 32, 58, 0.12);
+            border: 1px solid rgba(23, 72, 102, 0.12);
             border-radius: 999px;
-            background: rgba(250, 238, 233, 0.88);
-            box-shadow: 0 18px 60px rgba(79, 31, 27, 0.1);
+            background: rgba(244, 249, 250, 0.88);
+            box-shadow: 0 18px 60px rgba(20, 38, 62, 0.1);
             backdrop-filter: blur(18px);
         }
 
@@ -197,7 +197,7 @@
         h1,
         h2,
         h3 {
-            font-family: "Bodoni Moda", Georgia, serif;
+            font-family: "Geist", "Manrope", system-ui, sans-serif;
             letter-spacing: 0;
             line-height: 0.98;
             color: var(--ink);
@@ -206,10 +206,9 @@
         h1 {
             max-width: 760px;
             margin-top: 24px;
-            font-size: clamp(2.85rem, 4.35vw, 4.55rem);
-            font-weight: 500;
-            font-style: italic;
-            line-height: 0.96;
+            font-size: clamp(2.85rem, 5.2vw, 5.35rem);
+            font-weight: 800;
+            line-height: 0.98;
         }
 
         .mobile-title {
@@ -257,7 +256,7 @@
         .btn-primary {
             color: oklch(98% 0.008 80);
             background: var(--plum);
-            box-shadow: 0 20px 48px rgba(112, 45, 39, 0.25);
+            box-shadow: 0 20px 48px rgba(22, 72, 102, 0.24);
         }
 
         .btn-primary span {
@@ -265,8 +264,8 @@
         }
 
         .btn-secondary {
-            border: 1px solid rgba(112, 45, 39, 0.15);
-            background: rgba(250, 238, 233, 0.64);
+            border: 1px solid rgba(23, 72, 102, 0.14);
+            background: rgba(244, 249, 250, 0.66);
             color: var(--ink);
         }
 
@@ -293,7 +292,7 @@
             padding: 8px 11px;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 999px;
-            background: rgba(250, 238, 233, 0.62);
+            background: rgba(244, 249, 250, 0.64);
             color: var(--muted);
             font-size: 0.84rem;
             font-weight: 700;
@@ -314,7 +313,7 @@
             overflow: hidden;
             border-radius: 28px;
             background:
-                linear-gradient(145deg, oklch(28% 0.075 27), oklch(18% 0.05 25) 56%),
+                linear-gradient(145deg, oklch(24% 0.06 225), oklch(16% 0.04 245) 56%),
                 var(--ink);
             color: oklch(97% 0.01 80);
         }
@@ -463,10 +462,9 @@
             position: relative;
             z-index: 1;
             margin-top: 34px;
-            font-family: "Bodoni Moda", Georgia, serif;
-            font-size: 2rem;
-            font-weight: 600;
-            font-style: italic;
+            font-family: "Geist", "Manrope", system-ui, sans-serif;
+            font-size: 1.9rem;
+            font-weight: 800;
             line-height: 0.98;
         }
 
@@ -596,8 +594,7 @@
         .section-title {
             margin-top: 14px;
             font-size: clamp(2.45rem, 5.4vw, 4.8rem);
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
         }
 
         .section-copy {
@@ -625,8 +622,7 @@
         .problem-statement h2 {
             color: inherit;
             font-size: clamp(2.45rem, 5.5vw, 5.15rem);
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
             line-height: 0.95;
         }
 
@@ -644,7 +640,7 @@
             padding: 10px;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 34px;
-            background: rgba(250, 238, 233, 0.58);
+            background: rgba(244, 249, 250, 0.58);
         }
 
         .mess-item {
@@ -696,7 +692,7 @@
             padding: 18px;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 28px;
-            background: rgba(250, 238, 233, 0.76);
+            background: rgba(244, 249, 250, 0.76);
             transition: transform 520ms var(--ease), background 520ms var(--ease);
         }
 
@@ -738,15 +734,14 @@
             top: 120px;
             padding: clamp(26px, 4vw, 42px);
             border-radius: 32px;
-            background: linear-gradient(145deg, var(--plum), oklch(27% 0.073 24));
+            background: linear-gradient(145deg, var(--plum), oklch(31% 0.075 225));
             color: oklch(98% 0.008 80);
         }
 
         .systems-intro h2 {
             color: inherit;
             font-size: clamp(2.15rem, 4.4vw, 3.8rem);
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
         }
 
         .systems-intro p {
@@ -812,8 +807,7 @@
         .case-panel h2 {
             margin-top: 14px;
             font-size: clamp(2.35rem, 4.8vw, 4.3rem);
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
         }
 
         .case-panel p {
@@ -836,7 +830,7 @@
             padding: 16px;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 24px;
-            background: rgba(250, 238, 233, 0.72);
+            background: rgba(244, 249, 250, 0.72);
         }
 
         .case-row span {
@@ -862,7 +856,7 @@
             padding: 26px;
             border: 1px solid rgba(53, 32, 58, 0.1);
             border-radius: 30px;
-            background: rgba(250, 238, 233, 0.72);
+            background: rgba(244, 249, 250, 0.72);
         }
 
         .business-card h3 {
@@ -882,15 +876,14 @@
             align-items: stretch;
             padding: clamp(26px, 5vw, 58px);
             border-radius: 38px;
-            background: oklch(89% 0.042 18);
+            background: var(--soft-plum);
             box-shadow: var(--shadow);
         }
 
         .trust-band h2 {
             max-width: 760px;
             font-size: clamp(2.4rem, 5.2vw, 4.8rem);
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
         }
 
         .trust-band p {
@@ -907,9 +900,9 @@
 
         .trust-item {
             padding: 20px;
-            border: 1px solid rgba(112, 45, 39, 0.14);
+            border: 1px solid rgba(23, 72, 102, 0.14);
             border-radius: 24px;
-            background: rgba(255, 248, 244, 0.62);
+            background: rgba(247, 252, 252, 0.72);
         }
 
         .trust-item strong {
@@ -985,8 +978,7 @@
             max-width: 800px;
             font-size: clamp(2.35rem, 5.2vw, 4.8rem);
             color: inherit;
-            font-weight: 500;
-            font-style: italic;
+            font-weight: 800;
         }
 
         .quote-box p {
@@ -1292,11 +1284,10 @@
             <div class="page-shell hero-grid">
                 <div class="hero-copy reveal">
                     <div class="eyebrow">Sistemas a medida para fitness y wellness</div>
-                    <h1 class="desktop-title">Sistemas digitales para studios que quieren sentirse tan premium como sus clases.</h1>
-                    <h1 class="mobile-title">Sistemas digitales para studios premium.</h1>
-                    <p class="hero-subtitle">Creamos reservas, membresías, Apple Wallet, pagos y automatizaciones a la
-                        medida de tu studio, para que tus alumnos vivan una experiencia fluida desde que apartan hasta
-                        que vuelven.</p>
+                    <h1 class="desktop-title">Tecnología a medida para studios fitness.</h1>
+                    <h1 class="mobile-title">Tecnología para studios fitness.</h1>
+                    <p class="hero-subtitle">Reservas, membresías, Apple Wallet, pagos y automatizaciones en un sistema
+                        hecho para tu operación.</p>
                     <div class="hero-actions">
                         <a href="https://wa.me/TUNUMERO?text=Hola,%20quiero%20diseñar%20un%20sistema%20digital%20para%20mi%20studio"
                             class="btn btn-primary">Diseñar mi sistema <span>↗</span></a>
@@ -1392,10 +1383,8 @@
             <div class="page-shell problem-band">
                 <div class="problem-statement reveal">
                     <div class="section-label">El punto real</div>
-                    <h2>Cuando todo vive en WhatsApp, Excel y links sueltos, la experiencia deja de sentirse premium.
-                    </h2>
-                    <p>El problema no es solo administrativo. Cuando el alumno tiene que preguntar horarios, esperar
-                        confirmación, mandar comprobantes y recordar su paquete, el studio pierde parte de su magia.</p>
+                    <h2>Menos herramientas sueltas. Más sistema.</h2>
+                    <p>Centralizamos reservas, pagos, membresías y recordatorios para que el alumno no sienta fricción.</p>
                 </div>
                 <div class="mess-list reveal delay-1">
                     <div class="mess-item">
@@ -1428,10 +1417,9 @@
                 <div class="section-top">
                     <div>
                         <div class="section-label">Experiencia del alumno</div>
-                        <h2>Un flujo que se siente simple, aunque por dentro haga mucho.</h2>
+                        <h2>Un recorrido digital, de reserva a regreso.</h2>
                     </div>
-                    <p class="section-copy">Diseñamos el recorrido completo para que reservar, pagar, entrar y volver se
-                        sienta natural. El sistema trabaja detrás, la experiencia se siente ligera.</p>
+                    <p class="section-copy">El sistema trabaja detrás. La experiencia se siente rápida, clara y de marca.</p>
                 </div>
                 <div class="journey">
                     <article class="journey-step">
@@ -1472,9 +1460,8 @@
             <div class="page-shell systems-wrap">
                 <div class="systems-intro reveal">
                     <div class="section-label" style="color: rgba(255,255,255,0.62);">Lo que construimos</div>
-                    <h2>No vendemos plantillas. Diseñamos el flujo que tu studio necesita.</h2>
-                    <p>Cada proyecto se cotiza según módulos, integraciones y nivel de operación: reservas,
-                        membresías, pagos, Wallet, WhatsApp, panel administrativo y automatizaciones.</p>
+                    <h2>Módulos conectados, no plantillas.</h2>
+                    <p>Armamos lo necesario según tu operación: agenda, pagos, Wallet, WhatsApp y panel administrativo.</p>
                 </div>
                 <div class="module-grid reveal delay-1">
                     <article class="module">
@@ -1525,9 +1512,8 @@
             <div class="page-shell case-panel reveal">
                 <div>
                     <div class="section-label">Caso principal</div>
-                    <h2>Para un studio de pilates que cuida cada detalle.</h2>
-                    <p>Un sistema para clases por cupo, paquetes de sesiones, pase digital en Wallet, recordatorios por
-                        WhatsApp y un panel para que el equipo vea reservas, pagos y asistencia.</p>
+                    <h2>Pilates: cupos, paquetes y asistencia en orden.</h2>
+                    <p>Reservas por clase, pase digital, recordatorios y panel para el equipo.</p>
                 </div>
                 <div class="case-stack">
                     <div class="case-row">
@@ -1557,8 +1543,7 @@
                         <div class="section-label">También adaptable</div>
                         <h2>El mismo criterio sirve para otros negocios con operación diaria.</h2>
                     </div>
-                    <p class="section-copy">Fitness es el foco, pero AgendaFull puede adaptar sistemas para negocios que
-                        necesitan ordenar atención, venta y regreso de clientes.</p>
+                    <p class="section-copy">La misma lógica sirve para negocios con citas, pedidos o clientes recurrentes.</p>
                 </div>
                 <div class="other-businesses">
                     <article class="business-card">
@@ -1581,10 +1566,8 @@
             <div class="page-shell trust-band">
                 <div>
                     <div class="section-label">Lo que le faltaba</div>
-                    <h2>Dirección antes de desarrollo, para que el sistema no se sienta genérico.</h2>
-                    <p>El valor de AgendaFull no es solo programar pantallas. Es entender cómo se mueve tu studio,
-                        convertirlo en una experiencia digital clara y hacer que cada punto de contacto se sienta de tu
-                        marca.</p>
+                    <h2>Primero estrategia. Después código.</h2>
+                    <p>Diseñamos el flujo antes de construirlo, para que el sistema se sienta propio y no genérico.</p>
                 </div>
                 <div class="trust-list">
                     <div class="trust-item">
@@ -1610,29 +1593,28 @@
                         <div class="section-label">Proceso</div>
                         <h2>Primero entendemos tu operación. Luego construimos.</h2>
                     </div>
-                    <p class="section-copy">Un buen sistema no empieza con una plantilla. Empieza con preguntas sobre
-                        tus clases, reglas, equipo, alumnos y momentos donde hoy se pierde tiempo.</p>
+                    <p class="section-copy">Preguntas correctas antes de código: clases, reglas, equipo y alumnos.</p>
                 </div>
                 <div class="process">
                     <article class="process-step">
                         <span>01</span>
                         <h3>Entendemos tu operación</h3>
-                        <p>Mapeamos cómo reservas, cobras, atiendes y das seguimiento hoy.</p>
+                        <p>Mapeamos reservas, pagos, equipo y alumnos.</p>
                     </article>
                     <article class="process-step">
                         <span>02</span>
                         <h3>Diseñamos el flujo digital</h3>
-                        <p>Definimos pantallas, reglas, automatizaciones y experiencia del alumno.</p>
+                        <p>Definimos pantallas, reglas y automatizaciones.</p>
                     </article>
                     <article class="process-step">
                         <span>03</span>
                         <h3>Construimos y conectamos</h3>
-                        <p>Desarrollamos el sistema, integramos pagos, Wallet, WhatsApp y paneles.</p>
+                        <p>Integramos pagos, Wallet, WhatsApp y paneles.</p>
                     </article>
                     <article class="process-step">
                         <span>04</span>
                         <h3>Lanzamos y mejoramos</h3>
-                        <p>Acompañamos el arranque y ajustamos según la operación real.</p>
+                        <p>Ajustamos con el uso real del studio.</p>
                     </article>
                 </div>
             </div>
@@ -1642,8 +1624,7 @@
             <div class="page-shell quote-box">
                 <div>
                     <h2>Construyamos el sistema que tu studio necesita.</h2>
-                    <p>Cuéntanos cómo trabaja tu negocio y qué experiencia quieres que viva tu alumno. Nosotros lo
-                        convertimos en un flujo digital claro, premium y operable.</p>
+                    <p>Cuéntanos cómo opera tu studio. Lo convertimos en un sistema claro y escalable.</p>
                 </div>
                 <a href="https://wa.me/TUNUMERO?text=Hola,%20quiero%20diseñar%20un%20sistema%20digital%20para%20mi%20studio"
                     class="btn btn-primary">Hablar por WhatsApp <span>↗</span></a>
