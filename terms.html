@@ -9,21 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
         :root {
-            --green-primary: #4A9D7C;
-            --green-dark: #1E3A34;
-            --cream: #F8F6F3;
-            --white: #FFFFFF;
-            --gray-100: #F5F5F5;
-            --gray-200: #E5E5E5;
-            --gray-500: #737373;
-            --gray-700: #404040;
-            --shadow-sm: 0 1px 2px rgba(30, 58, 52, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(30, 58, 52, 0.1), 0 2px 4px -2px rgba(30, 58, 52, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(30, 58, 52, 0.1), 0 4px 6px -4px rgba(30, 58, 52, 0.1);
+            --base: oklch(96% 0.012 80);
+            --surface: oklch(98% 0.008 80);
+            --ink: oklch(18% 0.018 265);
+            --muted: oklch(43% 0.025 270);
+            --line: oklch(84% 0.018 80);
+            --plum: oklch(38% 0.075 335);
         }
 
         * {
@@ -33,9 +28,9 @@
         }
 
         body {
-            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--cream);
-            color: var(--green-dark);
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--base);
+            color: var(--ink);
             line-height: 1.6;
         }
 
@@ -46,8 +41,8 @@
             right: 0;
             z-index: 1000;
             padding: 1rem 2rem;
-            background: rgba(248, 246, 243, 0.95);
-            border-bottom: 1px solid rgba(30, 58, 52, 0.05);
+            background: rgba(250, 247, 241, 0.92);
+            border-bottom: 1px solid rgba(53, 32, 58, 0.08);
         }
 
         .navbar-container {
@@ -64,7 +59,7 @@
             gap: 0.5rem;
             font-weight: 700;
             font-size: 1.5rem;
-            color: var(--green-dark);
+            color: var(--ink);
             text-decoration: none;
         }
 
@@ -75,7 +70,7 @@
         }
 
         .nav-links a {
-            color: var(--green-dark);
+            color: var(--ink);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
@@ -83,7 +78,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--green-primary);
+            color: var(--plum);
         }
 
         .page-content {
@@ -95,24 +90,26 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            color: var(--green-primary);
+            color: var(--plum);
+            font-family: 'Bricolage Grotesque', 'Manrope', sans-serif;
         }
 
         h2 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem;
-            color: var(--green-dark);
+            color: var(--ink);
+            font-family: 'Bricolage Grotesque', 'Manrope', sans-serif;
         }
 
         p {
             margin-bottom: 1rem;
-            color: var(--gray-700);
+            color: var(--muted);
         }
 
         ul {
             margin-bottom: 1rem;
             padding-left: 2rem;
-            color: var(--gray-700);
+            color: var(--muted);
         }
 
         li {
@@ -120,8 +117,8 @@
         }
 
         footer {
-            background: var(--green-dark);
-            color: var(--white);
+            background: var(--ink);
+            color: var(--surface);
             padding: 4rem 2rem 2rem;
             margin-top: 4rem;
         }
@@ -146,7 +143,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--white);
+            color: var(--surface);
         }
 
         .footer-bottom {
@@ -174,19 +171,19 @@
         <h1>Términos y Condiciones</h1>
         <p>Última actualización: 21 de enero de 2026</p>
 
-        <p>Bienvenido a AgendaFull. Al utilizar nuestros servicios, aceptas cumplir con los siguientes Términos y Condiciones. Por favor, léelos detenidamente.</p>
+        <p>Bienvenido a AgendaFull. Diseñamos y operamos sistemas digitales para negocios, incluyendo reservas, membresías, pagos, comunicación, pases digitales, lealtad y automatizaciones. Al utilizar nuestros servicios, aceptas cumplir con los siguientes Términos y Condiciones.</p>
 
         <h2>1. Aceptación de los términos</h2>
         <p>Al acceder o utilizar el servicio AgendaFull, aceptas estar legalmente vinculado por estos términos. Si no aceptas estos términos, no debes utilizar nuestros servicios.</p>
 
         <h2>2. Descripción del servicio</h2>
-        <p>AgendaFull proporciona una plataforma para la creación y gestión de tarjetas de lealtad digitales para Apple Wallet y Google Wallet. Permitimos a los negocios gestionar programas de lealtad y a los usuarios almacenar y utilizar estas tarjetas.</p>
+        <p>AgendaFull proporciona sistemas digitales a medida para negocios. Estos sistemas pueden incluir reservas, membresías, paquetes, pagos, comunicación automatizada, pases digitales para Apple Wallet o Google Wallet, paneles administrativos, lealtad y otros flujos operativos definidos con cada cliente.</p>
 
         <h2>3. Cuentas de usuario</h2>
-        <p>Es posible que necesites crear una cuenta para utilizar ciertas funciones de nuestro servicio. Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, y aceptas la responsabilidad de todas las actividades que ocurran bajo tu cuenta.</p>
+        <p>Es posible que necesites crear una cuenta para utilizar ciertas funciones de nuestros sistemas. Eres responsable de mantener la confidencialidad de tu cuenta y contraseña, y aceptas la responsabilidad de todas las actividades que ocurran bajo tu cuenta.</p>
 
         <h2>4. Uso aceptable</h2>
-        <p>Te comprometes a utilizar nuestro servicio solo para fines legales y de acuerdo con estos términos. No puedes usar el servicio para:</p>
+        <p>Te comprometes a utilizar nuestros servicios solo para fines legales y de acuerdo con estos términos. No puedes usar los servicios para:</p>
         <ul>
             <li>Violar cualquier ley o regulación aplicable.</li>
             <li>Infringir los derechos de propiedad intelectual de otros.</li>
@@ -195,13 +192,13 @@
         </ul>
 
         <h2>5. Propiedad intelectual</h2>
-        <p>El servicio AgendaFull y todo su contenido original, características y funcionalidad son propiedad de AgendaFull y están protegidos por derechos de autor, marcas registradas y otras leyes de propiedad intelectual.</p>
+        <p>AgendaFull y todo su contenido original, características, diseños, sistemas y funcionalidad son propiedad de AgendaFull y están protegidos por derechos de autor, marcas registradas y otras leyes de propiedad intelectual.</p>
 
         <h2>6. Limitación de responsabilidad</h2>
         <p>En ningún caso AgendaFull, sus directores, empleados o afiliados serán responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo, sin limitación, pérdida de beneficios, datos o uso.</p>
 
         <h2>7. Modificaciones al servicio y términos</h2>
-        <p>Nos reservamos el derecho de modificar o discontinuar nuestro servicio en cualquier momento. También podemos revisar estos términos periódicamente. El uso continuado del servicio después de cualquier cambio constituye tu aceptación de los nuevos términos.</p>
+        <p>Nos reservamos el derecho de modificar o discontinuar nuestros servicios en cualquier momento. También podemos revisar estos términos periódicamente. El uso continuado del servicio después de cualquier cambio constituye tu aceptación de los nuevos términos.</p>
 
         <h2>8. Contacto</h2>
         <p>Si tienes alguna pregunta sobre estos Términos, por favor contáctanos.</p>
@@ -214,8 +211,8 @@
                 <a href="terms.html">Términos y Condiciones</a>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 AgendaFull. Todos los derechos reservados.</p>
-                <p>Hecho con ❤️ en México</p>
+                <p>© 2026 AgendaFull. Todos los derechos reservados.</p>
+                <p>Hecho en México</p>
             </div>
         </div>
     </footer>
